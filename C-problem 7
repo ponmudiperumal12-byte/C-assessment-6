@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+    int i =5,odd;
+    while(i <10)
+    {
+        odd=2*i+1;
+        i++;
+        printf("%d\n",odd);
+    }
+}
