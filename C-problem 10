@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int i =5,f, s, sum=0;
+    while(i <50)
+    {
+        sum=sum+i;
+        f=sum %10;
+        if(f==5)
+        {
+        printf("%d\n",sum);
+        }
+        i++;
+    }
+}
