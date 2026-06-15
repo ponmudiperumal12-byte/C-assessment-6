@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int i =5,odd,s, sum=0;
+    while(i <50)
+    {
+        odd=2*i+1;
+        sum=sum+odd;
+        s=(sum /10) %10;
+        if(s==7)
+        {
+        printf("%d\n",sum);
+        }
+        i++; 
+    }
+}
