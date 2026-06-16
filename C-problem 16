@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int num, temp, l, power = 1;
+    printf ("enter the number:");
+    scanf("%d", &num);
+    temp = num;
+    while(temp >= 10)
+    {
+        temp = temp / 10;
+        power = power * 10;
+    }
+
+    l = temp;
+    if(l % 2 == 0)
+        printf("%d", num);
+    else
+        printf("%d", num - power);
+}
