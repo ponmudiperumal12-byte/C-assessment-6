@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, two, count = 0;
+   printf ("enter the number:");
+    scanf("%d", &n);
+
+    while(n >= 10)
+    {
+        two = n % 100;
+
+        if((two / 10) % 2 != 0 && (two % 10) % 2 != 0)
+            count++;
+
+        n = n / 10;
+    }
+
+    printf("%d", count);
+}
